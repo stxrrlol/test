@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html>
-<body>
+<style>
+  h1 {
+    text-align: center;
+  }
+</style>
+<body id='yessir'>
 <h1 id='test'>
 You are an annoying fuck :)
 </h1>
+<script>
+  function test() {
+    setTimeout(() => {
+      document.getElementById("test").style.color = "red";
+      document.getElementById("yessir").style.backgroundColor = "violet";
+      setTimeout(() => {
+        document.getElementById("test").style.color = "orange";
+        document.getElementById("yessir").style.backgroundColor = "indigo";
+        setTimeout(() => {
+          document.getElementById("test").style.color = "yellow";
+          document.getElementById("yessir").style.backgroundColor = "blue";
+          setTimeout(() => {
+            document.getElementById("test").style.color = "green";
+            document.getElementById("yessir").style.backgroundColor = "#006400";
+            setTimeout(() => {
+              document.getElementById("test").style.color = "blue";
+              document.getElementById("yessir").style.backgroundColor = "yellow";
+              setTimeout(() => {
+                document.getElementById("test").style.color = "indogo";
+                document.getElementById("yessir").style.backgroundColor = "orange";
+                setTimeout(() => {
+                  document.getElementById("test").style.color = "violet";
+                  document.getElementById("yessir").style.backgroundColor = "red";
+                  setTimeout(() => {
+                    test()
+                  }, 500);  
+                }, 500);
+              }, 500);
+            }, 500);
+          }, 500);
+        }, 500);
+      }, 500);
+    }, 500);
+  }
+  test()
+</script>
 </body>
 </html>
